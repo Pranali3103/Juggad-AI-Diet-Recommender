@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendation Form</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index.css') }}">
+</head>
+<body>
+    <h1>Recommendation Form</h1>
+    <form action="/recommendations" method="post">
+        <label for="age">Age:</label><br>
+        <input type="text" id="age" name="age"><br>
+        <label for="gender">Gender:</label><br>
+        <input type="text" id="gender" name="gender"><br>
+        <label for="weight">Weight:</label><br>
+        <input type="text" id="weight" name="weight"><br>
+        <label for="height">Height:</label><br>
+        <input type="text" id="height" name="height"><br>
+        <label for="veg_or_nonveg">Vegetarian/Non-vegetarian:</label><br>
+        <input type="text" id="veg_or_nonveg" name="veg_or_nonveg"><br>
+        <label for="disease">Disease:</label><br>
+        <input type="text" id="disease" name="disease"><br>
+        <label for="region">Region:</label><br>
+        <input type="text" id="region" name="region"><br>
+        <label for="allergics">Allergies:</label><br>
+        <input type="text" id="allergics" name="allergics"><br>
+        <label for="foodtype">Food Type Preference:</label><br>
+        <input type="text" id="foodtype" name="foodtype"><br><br>
+        <input type="submit" value="Get Recommendations">
+    </form>
+</body>
+</html>

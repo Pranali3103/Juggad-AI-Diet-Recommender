@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendations</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='recommendations.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Recommendations</h1>
+        <ul class="recommendations">
+            {% for recommendation in recommendations %}
+                <li><p>{{ recommendation }}</p></li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
